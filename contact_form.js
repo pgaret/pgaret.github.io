@@ -3,7 +3,6 @@ $(document).ready(function() {
 		var name = $("#name").val();
 		var email = $("#email").val();
 		var message = $("#message").val();
-		var contact = $("#contact").val();
 		$("#returnmessage").empty(); // To empty previous error/success message.
 		// Checking for blank fields.
 		if (name == '' || email == '' || contact == '') {
@@ -13,8 +12,7 @@ $(document).ready(function() {
 			$.post("contact_form.php", {
 			name1: name,
 			email1: email,
-			message1: message,
-			contact1: contact
+			message1: message
 		}, function(data) {
 			$("#returnmessage").append(data); // Append returned message to message paragraph.
 			if (data == "Your Query has been received, We will contact you soon.") {
