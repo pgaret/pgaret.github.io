@@ -5,8 +5,8 @@ $(document).ready(function() {
 		var message = $("#message").val();
 		$("#returnmessage").empty(); // To empty previous error/success message.
 		// Checking for blank fields.
-		if (name == '' || email == '' || contact == '') {
-			alert("Please Fill Required Fields");
+		if (name == '' && email == '') {
+			$("#returnmessage").innerHTML("Please provide at least one of name or email");
 		} else {
 			// Returns successful data submission message when the entered information is stored in database.
 			$.post("contact_form.php", {
@@ -14,7 +14,7 @@ $(document).ready(function() {
 			email1: email,
 			message1: message
 		}, function(data) {
-			$("#returnmessage").append(data); // Append returned message to message paragraph.
+			$("#returnmessage").innerHTML(data); // Append returned message to message paragraph.
 			if (data == "Your Query has been received, We will contact you soon.") {
 			$("#form")[0].reset(); // To reset form fields on success.
 			}
