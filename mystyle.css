@@ -1,0 +1,132 @@
+.navclass{
+  text-align: center;
+  vertical-align: middle;
+  background-color: #000022;
+  font-size: 2vw;
+  font-family: 'Droid Sans';
+ }
+.btn-primary{
+  background-color: #FFCC33;
+  color: #000022;
+  font-family: 'Droid Serif';
+}
+.name{
+  font-size: 2.25vw;
+  font-family: 'Droid Serif';
+  color: #FFCC33;
+}
+
+.bodybg{
+  background-image: url("http://www.burrisinc.com/Images/Design/office_Interior_design.jpg");
+  background-size: 100% 100%;;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 300px;
+  color: #F0F0F0;
+  text-align: center;
+  text-shadow: 4px 4px 4px #000033;
+  font-family: 'Alegreya Sans';
+}
+.title{
+  font-size: 7vw;
+ }
+.bigwords{
+  font-size: 5vw;
+}
+button:hover{
+	background: #3071A9;
+}
+#fCC{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/FCCIcon_zps85ckxab1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
+#twitter{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/TwitIcon_zps6odrhqo7.png");
+    background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
+#linkedin{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/LinkedIcon_zpsnssbutx2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
+#github{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/GitIcon_zps4esnhh3l.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+}
+.aboutme{
+  background-image: url("http://orig14.deviantart.net/00be/f/2008/003/7/d/wall_texture_by_shadowh3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.abouttitle{
+  font-size: 7vw;
+  color: #F0F0F0;
+  text-align: center;
+  text-shadow: 4px 4px 4px #000033;
+  font-family: 'Alegreya';
+}
+.abouttxt{
+  background-color: rgba(3, 71, 120, .75);
+  text-align: left;
+  font-size: 2vw;
+  color: #F0F0F0;
+  font-family: 'Alegreya Serif';
+}
+.port{
+  background-image: url("http://free.wallpaperbackgrounds.com/photography/scenic/129173-39995.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  color: #F0F0F0;
+  text-align: center;
+  text-shadow: 4px 4px 4px #000033;
+  font-family: 'Alegreya';
+}
+.portpiece{
+  background-image: url("http://www.jonathanjeter.com/images/Square_200x200.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+  text-align: center;
+  font-size: 2vw;
+  color: #F0F0F0;
+  font-family: 'Alegreya Serif';
+}
+.tribbg{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Tribute%20Page%20img_zps2yyqpcd9.png");
+}
+.weatherbg{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Weather%20App%20img_zpsv46enmdh.png");
+}
+.randquotebg{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Quote%20Machine%20img_zpsrnlupddn.png")
+}
+.contact{
+  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/phone%20bg%203_zpsisy8assc.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contactinfo{
+  background-color: rgba(204, 204, 0, .3);
+  text-align: left;
+  font-size: 3vw;
+  color: #330033;
+  font-family: 'Alegreya Serif';
+}
+.touchtitle{
+  text-align: center;
+}
+.getintouch{
+  padding-left: 100px;
+}
