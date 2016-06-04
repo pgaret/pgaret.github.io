@@ -111,22 +111,17 @@ button:hover{
 .randquotebg{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Quote%20Machine%20img_zpsrnlupddn.png")
 }
-.contact{
-  background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/phone%20bg%203_zpsisy8assc.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
 }
-.contactinfo{
-  background-color: rgba(204, 204, 0, .3);
-  text-align: left;
-  font-size: 3vw;
-  color: #330033;
-  font-family: 'Alegreya Serif';
-}
-.touchtitle{
-  text-align: center;
-}
-.getintouch{
-  padding-left: 100px;
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
 }
