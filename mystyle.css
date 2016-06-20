@@ -103,17 +103,6 @@ button:hover{
   font-family: 'Alegreya Serif';
 }
 
-.tint{
-	position: relative;
-	float: left;
-	content: "";
-	display: block;
-	position: absolute;
-	background: rgba(0,255,255, 0.5);
-	
-}
-
-
 #tribute{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Tribute%20Page%20img_zpsdxm3voc2.png");
   background-size: contain;
