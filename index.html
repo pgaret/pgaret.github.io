@@ -8,6 +8,7 @@
 		
 		<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="myjava.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
 	</head>
@@ -93,28 +94,57 @@
 	
 	<div class="navclass">
 		<br>
-		<div class="abouttitle">Portfolio</div>
+		<div id="portfolio" class="abouttitle">Portfolio</div>
 		<br><br>
 		<h1>Web Development</h1>
 		<a href="http://codepen.io/pgaret/full/GoVxGm/" target="_blank"><input type="button" id="tribute"></input></a>
 		<a href="http://codepen.io/pgaret/full/BKRabK/" target="_blank"><input type="button" id="quote"></input></a>
 		<a href="http://codepen.io/pgaret/full/bpWvmE/" target="_blank"><input type="button" id="weather"></input></a>	
 		<br><br>
-		<h1>Game Development</h1>
-		<iframe width="420" height="315"
-			src="http://www.youtube.com/embed/MDND-w-S3Qc">
-		</iframe>
-		<iframe width="420" height="315"
-			src="http://www.youtube.com/embed/yCMUaIPpQPQ">
-		</iframe>
-		<iframe width="420" height="315"
-			src="http://www.youtube.com/embed/MDND-w-S3Qc">
-		</iframe>
 		
+		<h1>Game Development</h1>
+		<div class="row">
+			<div class="col-md-4">
+				Myths and Magic
+				<iframe width="420" height="315" frameborder="0"
+					src="mmtitle2.gif">
+				</iframe>
+				<br>
+				<button onclick="details('MM')">Details</button>
+			</div>
+			<div class="col-md-4">
+				Gold and Glory
+				<iframe width="420" height="315" frameborder="0"
+					src="http://www.youtube.com/embed/MDND-w-S3Qc">	
+				</iframe>
+				<br>
+				<button onclick="details('GaG')">Details</button>
+			</div>
+			<div class="col-md-4">
+				Asylum
+				<iframe width="420" height="315" frameborder="0"
+					src="http://www.youtube.com/embed/yCMUaIPpQPQ">
+				</iframe>
+				<br>
+				<button onclick="details('Asylum')">Details</button>
+			</div>			
+		</div>
+		<br>
+		<div class="row description">
+			<div class="col-md-4">
+				<p id="MM"</p>
+			</div>
+			<div class="col-md-4">
+				<p id="GaG"</p>
+			</div>
+			<div class="col-md-4">
+				<p id="Asylum"</p>
+			</div>			
+		</div>
 		<br><br><br><br><br>
 	</div>
 
-	<div class="google-maps">  
+	<div id="contact" class="google-maps">  
 		<iframe src="https://docs.google.com/forms/d/1IfWjXGco0rc0XNK0xU5c218i36qbLTBf4mdtoGczH6s/viewform?embedded=true" width="760" height="500" frameborder="0" style="border: 0"></iframe>
 	</div>
 	
