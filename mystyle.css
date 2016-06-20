@@ -117,43 +117,43 @@ button:hover{
 #tribute{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Tribute%20Page%20img_zpsdxm3voc2.png");
   background-size: contain;
-  width: 354px;
-  height: 200px;
+  width: 531px;
+  height: 300px;
 }
 
 #tribute:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/TributePageTint_zpsib4lwmtz.png");
   background-size: contain;
-  width: 354px;
-  height: 200px;
+  width: 531px;
+  height: 300px;
 }
 
 #weather{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Weather%20App%20img_zpszi2st2oy.png");
   background-size: contain;
-  width: 354px;
-  height: 200px;
+  width: 531px;
+  height: 300px;
 }
 
 #weather:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/WeatherAppTint_zpszz29wqzs.png");
   background-size: contain;
-  width: 354px;
-  height: 200px;
+  width: 531px;
+  height: 300px;
 }
 
 #quote{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Quote%20Machine%20img_zpsqfac1lz0.png");
   background-size: contain;
-  width: 354px;
-  height: 200px;
+  width: 531px;
+  height: 300px;
 }
 
 #quote:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/QuoteMachineTint_zpswbcemokd.png");
   background-size: contain;
-  width: 354px;
-  height: 200px;
+  width: 531px;
+  height: 300px;
 }
 
 .google-maps {
