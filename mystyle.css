@@ -87,60 +87,48 @@ button:hover{
   text-shadow: 4px 4px 4px #000033;
   font-family: 'Alegreya';
 }
-.portpiece{
-  background-image: url("http://www.jonathanjeter.com/images/Square_200x200.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  
-  text-align: center;
-  font-size: 2vw;
-  color: #F0F0F0;
-  font-family: 'Alegreya Serif';
+.portstyle{
+  border-radius: 8px;
 }
 
 #tribute{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Tribute%20Page%20img_zpsdxm3voc2.png");
-  background-size: contain;
-  width: 531px;
-  height: 300px;
+  background-size: cover;
+  width: 443px;
+  height: 250px;
 }
 
 #tribute:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/TributePageTint_zpsib4lwmtz.png");
-  background-size: contain;
+  background-size: cover;
   width: 531px;
   height: 300px;
 }
 
 #weather{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Weather%20App%20img_zpszi2st2oy.png");
-  background-size: contain;
-  width: 531px;
-  height: 300px;
+  background-size: cover;
+  width: 443px;
+  height: 250px;
 }
 
 #weather:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/WeatherAppTint_zpszz29wqzs.png");
-  background-size: contain;
+  background-size: cover;
   width: 531px;
   height: 300px;
 }
 
 #quote{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Quote%20Machine%20img_zpsqfac1lz0.png");
-  background-size: contain;
-  width: 531px;
-  height: 300px;
+  background-size: cover;
+  width: 443px;
+  height: 250px;
 }
 
 #quote:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/QuoteMachineTint_zpswbcemokd.png");
-  background-size: contain;
+  background-size: cover;
   width: 531px;
   height: 300px;
 }
