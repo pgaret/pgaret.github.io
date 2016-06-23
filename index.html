@@ -1,6 +1,5 @@
 	<!DOCTYPE html>
 <html>
-
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
@@ -15,19 +14,20 @@
 
 	<div class="container-fluid">
 	  <div class="row">
-		<div class="nav navclass navbar-fixed-top">
+		<div class="nav navclass topbar navbar-fixed-top">
 		  <div class="name col-md-2">P.H.Garet</div>
 		  <div class="col-md-6"></div>
 		  <div class="btn-group">
 			<a href="#front">
 			  <button type="button" class="btn btn-primary btn-lg">Home</button>
 			</a>
-			<a href="#aboutme">
-			  <button type="button" class="btn btn-primary btn-lg">About</button>
-			</a>
 			<a href="#portfolio">
 			  <button type="button" class="btn btn-primary btn-lg">Portfolio</button>
 			</a>
+			<a href="#aboutme">
+			  <button type="button" class="btn btn-primary btn-lg">About</button>
+			</a>
+
 			<a href="#contact">
 			  <button type="button" class="btn btn-primary btn-lg">Contact</button>
 			</a>
@@ -52,16 +52,16 @@
 		<div class="col-md-6">'
 		  <div class="btn-group socialbtn">
 			<a href="https://www.linkedin.com/in/phgaret" target="_blank">
-			  <button id="linkedin" class="btn btn-lg">&nbsp;&nbsp;</button>
+			  <button class="btn btn-lg iconlink linkedin">&nbsp;&nbsp;</button>
 			</a>
 			<a href="https://twitter.com/PeregrinGaret" target="_blank">
-			  <button id="twitter" class="btn btn-lg">&nbsp;&nbsp;</button>
+			  <button class="btn btn-lg iconlink twitter">&nbsp;&nbsp;</button>
 			</a>
 			<a href="https://www.freecodecamp.com/pgaret" target="_blank">
-			  <button id="fCC" class="btn btn-lg">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+			  <button class="btn btn-lg iconlink fCC">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 			</a>
 			<a href="https://github.com/pgaret" target="_blank">
-			  <button id="github" class="btn btn-lg">&nbsp;&nbsp;</button>
+			  <button class="btn btn-lg iconlink github">&nbsp;&nbsp;</button>
 			</a>
 
 		  </div>
@@ -69,52 +69,29 @@
 		<div class="col-md-3"></div>
 	  </div>
 	</div>
-	<div id="aboutme" class="container-fluid aboutme">
-	  <div class="row">
-		<div class="col-md-12 abouttitle">
-		  About Me
-		</div>
-	  </div>
-	  <br><br>
-	  <div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-4">
-		  <img src="http://i1070.photobucket.com/albums/u496/pgaret/profile%20next_zpsport8zkd.jpg" alt="responsive-image" class="img-responsive" </img>
-		</div>
-		<div class="col-md-6 abouttxt">
-		  Hi there, welcome to my portfolio. My name is Peregrin Garet- nice to meet you. I write code, technical documents, stories, and more.
-		  <br><br> I graduated in 2015 from RPI, an engineering school in upstate NY, with a dual major in Business Management and Game Development. While I was at school, I divided my work experience between code, project management, and game design. I also
-		  took a number of writing courses.
-		  <br><br> I began work immediately after graduation as an Analyst at Vitech Systems Group, an IT firm providing holistic browser-based software solutions for pension, insurance, and investment companies. At Vitech, I am responsible for documenting software updates and changes, and ensuring they are executed correctly, both from the front end and the back end. 
-		</div>
-		<div class="col-md-1">
-		</div>
-	  </div>
-	</div>
 	
-	<div class="navclass">
+	<div class="container-fluid navclass">
 		<br>
 		<div id="portfolio" class="abouttitle">Portfolio</div>
-		<br><br>
-		<h1>Web Development</h1>
+		<h1 class="subtitle">Web Development</h1>
 		<div class="row portstyle">
 			<div class="col-md-4">
-				Tribute Page
-				<a href="http://codepen.io/pgaret/full/GoVxGm/" target="_blank"><input type="button" id="tribute"></input></a>
+				<p>Tribute Page</p>
+				<a href="http://codepen.io/pgaret/full/GoVxGm/" target="_blank"><input type="button" class="link tribute"></input></a>
 				<br>
-				<button onclick="details('Tribute')">Details</button>
+				<button class="detailsbtn" onclick="details('Tribute')">Details</button>
 			</div>
 			<div class="col-md-4">
 				Random Quote Machine
-				<a href="http://codepen.io/pgaret/full/BKRabK/" target="_blank"><input type="button" id="quote"></input></a>
+				<a href="http://codepen.io/pgaret/full/BKRabK/" target="_blank"><input type="button" class="link quote"></input></a>
 				<br>
-				<button onclick="details('Random')">Details</button>			
+				<button class="detailsbtn"  onclick="details('Random')">Details</button>			
 			</div>			
 			<div class="col-md-4">
 				Weather Site
-				<a href="http://codepen.io/pgaret/full/bpWvmE/" target="_blank"><input type="button" id="weather"></input></a>	
+				<a href="http://codepen.io/pgaret/full/bpWvmE/" target="_blank"><input type="button" class="link weather"></input></a>	
 				<br>
-				<button onclick="details('Weather')">Details</button>			
+				<button class="detailsbtn"  onclick="details('Weather')">Details</button>			
 			</div>
 		</div>
 		<br>
@@ -131,15 +108,15 @@
 		</div>
 		<br><br>
 		
-		<h1>Game Development</h1>
-		<div class="row">
+		<h1 class="subtitle">Game Development</h1>
+		<div class="row portstyle">
 			<div class="col-md-4">
 				Myths and Magic
 				<iframe width="420" height="315" frameborder="0"
 					src="mmtitle2.gif">
 				</iframe>
 				<br>
-				<button onclick="details('MM')">Details</button>
+				<button class="detailsbtn"  onclick="details('MM')">Details</button>
 			</div>
 			<div class="col-md-4">
 				Gold and Glory
@@ -147,7 +124,7 @@
 					src="http://www.youtube.com/embed/MDND-w-S3Qc">	
 				</iframe>
 				<br>
-				<button onclick="details('GaG')">Details</button>
+				<button class="detailsbtn"  onclick="details('GaG')">Details</button>
 			</div>
 			<div class="col-md-4">
 				Asylum: Oculus Rift
@@ -155,7 +132,7 @@
 					src="http://www.youtube.com/embed/yCMUaIPpQPQ">
 				</iframe>
 				<br>
-				<button onclick="details('Asylum')">Details</button>
+				<button class="detailsbtn"  onclick="details('Asylum')">Details</button>
 			</div>			
 		</div>
 		<br>
@@ -171,6 +148,26 @@
 			</div>			
 		</div>
 		<br><br><br><br><br>
+	</div>
+	
+	<div id="aboutme" class="container-fluid aboutme">
+	  <div class="row">
+		<div class="col-md-12 abouttitle">
+		  About Me
+		</div>
+	  </div>
+	  <br><br>
+	  <div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8 abouttxt">
+		  Hi there, welcome to my portfolio. My name is Peregrin Garet- nice to meet you. I write code, technical documents, stories, and more.
+		  <br><br> I graduated in 2015 from RPI, an engineering school in New York, with a dual major in Business Management and Game Development. While I was at school, I divided my work experience between code, project management, and game design. I also
+		  took a number of writing courses.
+		  <br><br> I began work immediately after graduation as an Analyst at Vitech Systems Group, an IT firm providing holistic browser-based software solutions for pension, insurance, and investment companies. At Vitech, I am responsible for documenting software updates and changes, and ensuring they are executed correctly, both from the front end and the back end. 
+		</div>
+		<div class="col-md-1">
+		</div>
+	  </div>
 	</div>
 
 	<div id="contact" class="google-maps">  

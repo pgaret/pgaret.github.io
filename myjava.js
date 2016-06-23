@@ -19,7 +19,7 @@ function details(param){
 		document.getElementById("Tribute").innerHTML = "Tribute Page: <br> <ul><li>Dedicated to William Hartnell</li><li>The first Doctor</li><li>Basic HTML & CSS</li>";				
 	}
 	if (param == "Random"){
-		document.getElementById("Random").innerHTML = "Random Quotes: <br> <ul><li>Throws out random quotes from a list</li><li>Can tweet out the quotes</li><li>HTML, CSS, JavaScript</li>";				
+		document.getElementById("Random").innerHTML = "Random Quote Machine: <br> <ul><li>Displays quotes from a list</li><li>Can tweet out the quotes</li><li>HTML, CSS, JavaScript</li>";				
 	}
 	if (param == "Weather"){
 		document.getElementById("Weather").innerHTML = "Weather App: <br> <ul><li>Returns temperature & weather conditions</li><li>Uses Wunderground API w/ JSON</li><li>Searches using Zip or City</li>";				

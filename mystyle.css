@@ -1,15 +1,3 @@
-.navclass{
-  text-align: center;
-  vertical-align: middle;
-  background-color: #000022;
-  font-size: 2vw;
-  font-family: 'Droid Sans';
- }
-.btn-primary{
-  background-color: #FFCC33;
-  color: #000022;
-  font-family: 'Droid Serif';
-}
 .name{
   font-size: 2.25vw;
   font-family: 'Droid Serif';
@@ -27,39 +15,45 @@
   text-shadow: 4px 4px 4px #000033;
   font-family: 'Alegreya Sans';
 }
+
+.btn-primary{
+  background-color: #FFCC33;
+  color: #000022;
+  font-family: 'Droid Serif';
+}
+
+.button:hover{
+  background: #3071A9;
+}
+
 .title{
   font-size: 7vw;
  }
 .bigwords{
   font-size: 5vw;
 }
-button:hover{
-	background: #3071A9;
+.iconlink{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  	
 }
-#fCC{
+
+.fCC{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/FCCIcon_zps85ckxab1.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;  
 }
-#twitter{
+.twitter{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/TwitIcon_zps6odrhqo7.png");
-    background-size: 100% 100%;
-  background-repeat: no-repeat;  
+
 }
-#linkedin{
+.linkedin{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/LinkedIcon_zpsnssbutx2.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;  
 }
-#github{
+.github{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/GitIcon_zps4esnhh3l.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;  
 }
 .aboutme{
-  background-image: url("http://orig14.deviantart.net/00be/f/2008/003/7/d/wall_texture_by_shadowh3.jpg");
-  background-size: 100%;
+  background-color: rgb(15, 38, 61);
   background-repeat: no-repeat;
+  background-size: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -77,66 +71,84 @@ button:hover{
   color: #F0F0F0;
   font-family: 'Alegreya Serif';
 }
-.port{
-  background-image: url("http://free.wallpaperbackgrounds.com/photography/scenic/129173-39995.jpg");
-  padding-top: 50px;
-  padding-bottom: 50px;
-  
+
+.portstyle{
+  font-size: 2vw;
   color: #F0F0F0;
+  background-color: #0099CC;
   text-align: center;
   text-shadow: 4px 4px 4px #000033;
   font-family: 'Alegreya';
-}
-.portstyle{
   border-radius: 8px;
 }
 
-#tribute{
+.navclass{
+  text-align: center;
+  vertical-align: middle;
+  background-color: #003399;
+  font-size: 2vw;
+  font-family: 'Droid Sans';
+ }
+ 
+ .topbar{
+  background-color: #000022;
+}
+
+.link{
+  background-size: cover;
+  width: 443px;
+  height: 250px;
+}
+
+
+.tribute{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Tribute%20Page%20img_zpsdxm3voc2.png");
-  background-size: cover;
-  width: 443px;
-  height: 250px;
 }
 
-#tribute:hover{
+.tribute:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/TributePageTint_zpsib4lwmtz.png");
-  background-size: cover;
-  width: 531px;
-  height: 300px;
 }
 
-#weather{
+.weather{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Weather%20App%20img_zpszi2st2oy.png");
-  background-size: cover;
-  width: 443px;
-  height: 250px;
 }
 
-#weather:hover{
+.weather:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/WeatherAppTint_zpszz29wqzs.png");
-  background-size: cover;
-  width: 531px;
-  height: 300px;
 }
 
-#quote{
+.quote{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/Quote%20Machine%20img_zpsqfac1lz0.png");
-  background-size: cover;
-  width: 443px;
-  height: 250px;
 }
 
-#quote:hover{
+.quote:hover{
   background-image: url("http://i1070.photobucket.com/albums/u496/pgaret/QuoteMachineTint_zpswbcemokd.png");
-  background-size: cover;
-  width: 531px;
-  height: 300px;
+}
+
+.detailsbtn{
+  background-color: rgb(50, 100, 136);
+  color: rgb(240, 240, 240);
+}
+
+.detailsbtn:hover{
+  background-color: rgb(2, 2, 52);
+  color: rgb(240, 240, 240);
+}
+
+.subtitle{
+  font-size: 3vw;
+  color: #F0F0F0;
+  background-color: #66CCFF;
+  text-align: center;
+  text-shadow: 4px 4px 4px #000033;
+  font-family: 'Alegreya';
+  width: 50%;
+  margin: auto;
 }
 
 .description{
 	color: white;
 	text-align: left;
-	
 	visibility: hidden;
 }
 
