@@ -1,0 +1,55 @@
+@font-face{
+  font-family: simplifica;
+  src: url('./fonts/SIMPLIFICA Typeface.ttf')
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#header{
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  color: lightgrey;
+  background-color: rgb(96,169,124);
+  height: 100vh;
+  padding-top: 1%;
+}
+
+#title{
+  font-family: simplifica;
+  letter-spacing: 5px;
+  font-size: 8vw;
+  /*font-size: 6.854em;*/
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#skills{
+  font-size: 2.6vw;
+  list-style: none;
+  text-align: center;
+  margin-top: 1%;
+}
+
+#listitem{
+  display: inline-block;
+  padding: 2% 1%;
+  margin: 1%;
+  opacity: 0;
+  background-color: rgb(118, 187, 200);
+  color: rgb(25, 63, 57);
+}
+
+#webdev{
+  float: left;
+  margin: 0% 1% 0% 6%;
+}
+
+#icon{
+  width: 4vw;
+  padding: 5%;
+}
