@@ -13,19 +13,30 @@
   text-align: center;
   color: lightgrey;
   background-color: rgb(96,169,124);
+  background-size: cover;
   height: 100vh;
-  padding-top: 1%;
 }
 
 #title{
   font-family: simplifica;
   letter-spacing: 5px;
-  font-size: 8vw;
-  /*font-size: 6.854em;*/
+  font-size: 7vw;
   width: 50%;
   margin-left: 25%;
+  margin-bottom: -5%;
   text-align: center;
   font-weight: bold;
+}
+
+#subtitle{
+  font-family: simplifica;
+  letter-spacing: 5px;
+  font-size: 4vw;
+  width: 33%;
+  margin-left: 66%;
+  border-bottom: solid medium lightgrey;
+  text-align: center;
+  opacity: 0;
 }
 
 #skills{
@@ -37,19 +48,20 @@
 
 #listitem{
   display: inline-block;
-  padding: 2% 1%;
-  margin: 1%;
+  padding: 1% 1%;
+  margin: 0% 1%;
   opacity: 0;
   background-color: rgb(118, 187, 200);
   color: rgb(25, 63, 57);
 }
 
 #webdev{
-  float: left;
+  width: 33%;
   margin: 0% 1% 0% 6%;
 }
 
 #icon{
-  width: 4vw;
-  padding: 5%;
+  width: 10vw;
+  padding: 2%;
+  opacity: 0;
 }

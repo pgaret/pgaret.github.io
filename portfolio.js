@@ -9,39 +9,32 @@ $(document).ready(function(){
 			setTimeout(fillName, 100)
 		}
 		else {
-			spawnSkills()
+			fadeInChildren("skills", spawnIcons)
 		}
 	}, 100)
 })
 
-function spawnSkills(){
+function fadeInChildren(str, callback){
 	let i = 0;
 	setTimeout(function show(){
-		$($("#skills").children()[i]).animate({
+		$($("#"+str).children()[i]).animate({
 			opacity: 1
 		}, 500, function(){
 					i++
-					if (i < $("#skills").children().length){
+					if (i < $("#"+str).children().length){
 						setTimeout(show, 100)
 					}
 					else {
-						spawnIcons()
+						callback()
 					}
 				})
 	}, 100)
 }
 
 function spawnIcons(){
-	var dir = './images/webdev'
-	var ext = '.png'
-	$.ajax({
-		url: dir,
-		success: function(data){
-			$(data).find("a:contains("+ext+")").each(function(){
-				var filename = this.href.replace(window.location.host, "").replace("http://", "")
-				console.log("<img src='" + dir + filename + "'>")
-			})
-		}
-	})
-	$("#webdev").append("<img id='icon' src='./images/webdev/1_html.png'></img>")
+	fadeInChildren("icons", nextThing)
+}
+
+function nextThing(){
+	console.log("welp")
 }
