@@ -1,12 +1,15 @@
-var name = "PEREGRIN GARET"
+var name = "PEREGRIN GARET";
+var currentPopup = "";
+var currentSlide = 0;
+
 $(document).ready(function(){
 	setTimeout(function fillName(){
 		let index = $("#title").text().length; let str = ""
 		if (name[index] === " " && index < name.length) { str = name[index]+name[index+1] }
 		else { str = name[index] }
-		$("#title").append(str)
+		$("#title").append(str);
 		if ($("#title").text().length < name.length){
-			setTimeout(fillName, 100)
+			setTimeout(fillName, 100);
 		}
 		else {
 			fadeInChildren("skills", spawnIcons)
@@ -17,24 +20,67 @@ $(document).ready(function(){
 function fadeInChildren(str, callback){
 	let i = 0;
 	setTimeout(function show(){
+		if (i !== 0) { $($("#"+str).children()[i]).css("display", "inline-block") }
 		$($("#"+str).children()[i]).animate({
 			opacity: 1
 		}, 500, function(){
 					i++
 					if (i < $("#"+str).children().length){
-						setTimeout(show, 100)
+						setTimeout(show, 100);
 					}
 					else {
-						callback()
+						if (callback) {callback()}
 					}
 				})
 	}, 100)
 }
 
 function spawnIcons(){
-	fadeInChildren("icons", nextThing)
+	fadeInChildren("icons");
 }
 
-function nextThing(){
-	console.log("welp")
+function openPopup(id){
+	$(".popup").css("display", "block");
+	$("#"+id).css("display", "block");
+	$("body").css("background-color", "rgb(36,99,54)")
+	$(".header:first").css("opacity", ".1")
+	currentPopup = id;
+}
+
+function closePopup(){
+	$(".popup").css("display", "none");
+	$("#"+currentPopup).css("display", "none");
+	$("body").css("background-color", "rgb(96,169,124)")
+	$(".header:first").css("opacity", "1")
+	currentPopup = "";
+	currentSlide = 0;
+}
+
+function slideShow(dir){
+	let slides = "#"+currentPopup+" .slides"
+	let nav = "#"+currentPopup+" #nav"
+	if (dir == -1){
+		if (currentPopup !== "" && currentSlide > 0){
+			currentSlide -= 1;
+			$(slides).children().slice(currentSlide+1, currentSlide+2).css("display", "none");
+			$(slides).children().slice(currentSlide, currentSlide+1).css("display", "block");
+			if (currentSlide === 0){
+				$(nav).children().first().attr("disabled", true)
+			} else {
+				$(nav).children().first().attr("disabled", false)
+			}
+			$(nav).children().slice(1).attr("disabled", false)
+		}
+	}
+	else if (dir == 1 && currentSlide < $(slides).children().length - 1){
+		currentSlide += 1;
+		$(slides).children().slice(currentSlide-1, currentSlide).css("display", "none");
+		$(slides).children().slice(currentSlide, currentSlide+1).css("display", "block");
+		if (currentSlide === $(slides).children().length - 1){
+			$(nav).children().slice(1).attr("disabled", true)
+		} else{
+			$(nav).children().slice(1).attr("disabled", false)
+		}
+		$(nav).children().first().attr("disabled", false)
+	}
 }

@@ -11,20 +11,133 @@
 	</head>
 
 	<body>
-		<nav id="header">
+		<nav class="header">
 			<p id="title"></p>
 			<ul id="skills">
-				<p id="subtitle">What I do</p>
-				<li id="listitem">Full Stack Web Development</li>
-				<li id="listitem">Software Development</li>
-				<li id="listitem">Game Development</li>
+				<p id="do" class="subtitle">What I do</p>
+				<li class="listitem" onClick="openPopup('fullstack')">Full Stack Web Development</li>
+				<!-- <li class="listitem" onClick="openPopup('software')">Software Development</li> -->
+				<li class="listitem" onClick="openPopup('games')">Game Development</li>
 			</ul>
 			<article id="icons">
-				<p id="subtitle" style="margin-left: 0px">Where I've been</p>
-				<img id='icon' src='http://fund.lipen.co/images/falt.jpg'></img>
-				<img id='icon' src='https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAWmAAAAJGNhMDdiYmI4LTcwYmMtNDdmMC05ZDJiLTUzYTBjNmY1ZDdlNw.png'></img>
-				<img id='icon' src='https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Rensselaer_at_Hartford_Seal.svg/1024px-Rensselaer_at_Hartford_Seal.svg.png'></img>
-				<img id='icon' src='http://www.georgetowndc.com/media/public_images/2015/06/03/public_image_36.png'></img>
+				<p id="been" class="subtitle">Where I've been</p>
+				<img class='icon' onClick="openPopup('flatiron')" src='https://avatars0.githubusercontent.com/u/2180076?v=3&s=200'></img>
+				<img class='icon' onClick="openPopup('vitech')"  src='https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAWmAAAAJGNhMDdiYmI4LTcwYmMtNDdmMC05ZDJiLTUzYTBjNmY1ZDdlNw.png'></img>
+				<img class='icon' onClick="openPopup('rpi')"  src='https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Rensselaer_at_Hartford_Seal.svg/1024px-Rensselaer_at_Hartford_Seal.svg.png'></img>
+				<img class='icon' onClick="openPopup('air')"  src='http://cresst.org/wp-content/uploads/air-400x400.jpg'></img>
+			</article>
+		</nav>
+		<nav class="header popup">
+			<article id="fullstack">
+				<p class="subtitle articlesubtitle visible">Full Stack Web Development</p>
+				<button onClick="closePopup()" id="close">X</button>
+				<section id="nav">
+					<button onClick="slideShow('-1')" disabled><</button>
+					<button onClick="slideShow('1')">></button>
+				</section>
+				<div class="slides">
+					<a id='debtfree' href='https://debt-free.herokuapp.com/'>
+						<img class='slideimg' src='https://i.gyazo.com/271327a71752bb56c04235f4a454df8f.png'></img>
+						<section class="caption">
+							<span class="ctitle">DebtFree</span><br>
+							Personal finance debt management app<br>
+							Stack: React-Redux/Rails/postgreSQL
+						</section>
+						<div class="images">
+							<img class='articleicon' src='./images/webdev/rails.png'></img>
+							<img class='articleicon' src='./images/webdev/react.png'></img>
+							<img class='articleicon' src='./images/webdev/d3.png'></img>
+							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
+							<img class='articleicon' src='./images/webdev/pgSQL.png'></img>
+						</div>
+					</a>
+					<a id='overstat' href='https://overstat.herokuapp.com/'>
+						<img class='slideimg' src='https://i.gyazo.com/6e96bdeea6d1737292456d8f102f58ab.png'></img>
+						<section class="caption">
+							<span class="ctitle">Overstat</span><br>
+							Stack: Javascript/jQuery<br>
+							Desc: View your Overwatch stats and compare with friends
+						</section>
+						<div class="images">
+							<img class='articleicon' src='./images/webdev/js.png'></img>
+							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
+						</div>
+					</a>
+					<a id='tower' href='https://pgaret.github.io/TowerofHanoi/'>
+						<img class='slideimg' src='https://i.gyazo.com/b96840bfb1f54d94a1b12accf1de946a.png'></img>
+						<section class="caption">
+							<span class="ctitle">Tower of Hanoi</span><br>
+							Stack: Javascript/jQuery<br>
+							Desc: Watch a simulation of the Tower of Hanoi logic puzzle or solve it yourself.
+						</section>
+						<div class="images">
+							<img class='articleicon' src='./images/webdev/js.png'></img>
+							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
+						</div>
+					</a>
+					<a id='tictactoe' href='https://pgaret.github.io/TicTacToe/'>
+						<img class='slideimg' src='https://i.gyazo.com/a7e0462bbaa542392f6d4b2c552c0518.png'></img>
+						<section class="caption">
+							<span class="ctitle">Tic Tac Toe</span><br>
+							Stack: Javascript/jQuery<br>
+							Desc: TicTacToe game featuring unbeatable AI using Minimax.
+						</section>
+						<div class="images">
+							<img class='articleicon' src='./images/webdev/js.png'></img>
+							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
+						</div>
+					</a>
+				</div>
+			</article>
+			<article id="games">
+				<p class="subtitle articlesubtitle visible">Game Development</p>
+				<button onClick="closePopup()" id="close">X</button>
+				<section id="nav">
+					<button onClick="slideShow('-1')" disabled><</button>
+					<button onClick="slideShow('1')">></button>
+				</section>
+				<div class="slides">
+					<div id='gag'>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MDND-w-S3Qc" frameborder="0" allowfullscreen></iframe>
+						<section class="caption">
+							<span class='ctitle'>Gold and Glory</span><br>
+							Two player bullet hell game inspired by Ikaruga, built by a 4 man team in Unity2D.<br>
+							I programmed the playable characters in C# and co-designed the levels.
+						</section>
+					</div>
+					<div id='asylum'>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/yCMUaIPpQPQ" frameborder="0" allowfullscreen></iframe>						<section class="caption">
+							<section class='caption'>
+								<span class='ctitle'>Asylum</span><br>
+								Psychological horror game for the Oculus Rift, built by a 7 man team in Unity3D.<br>
+								I wrote the script and did level design.
+							</section>
+					</div>
+					<div id='mars'>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/dvsLDXgf-cM" frameborder="0" allowfullscreen></iframe>							<span class='ctitle'>Asylum</span><br>
+							<section class='caption'>
+								<span class='ctitle'>These Far Hills</span><br>
+								Educational game teaching thermodynamics, built by a research team in Unity3D.<br>
+								I did project management, story writing, and puzzle design.
+							</section>
+					</div>
+				</div>
+			</article>
+			<article id="flatiron">
+				<p class="subtitle articlesubtitle visible">Flatiron School</p>
+				<button onClick="closePopup()" id="close">X</button>
+			</article>
+			<article id="vitech">
+				<p class="subtitle articlesubtitle visible">Vitech Systems Group</p>
+				<button onClick="closePopup()" id="close">X</button>
+			</article>
+			<article id="rpi">
+				<p class="subtitle articlesubtitle visible">RPI</p>
+				<button onClick="closePopup()" id="close">X</button>
+			</article>
+			<article id="air">
+				<p class="subtitle articlesubtitle visible">AIR</p>
+				<button onClick="closePopup()" id="close">X</button>
 			</article>
 		</nav>
 	</body>
