@@ -166,7 +166,15 @@ body{
   display: none;
 }
 
-#software{
+#overstat{
+  display: none;
+}
+
+#tower{
+  display: none;
+}
+
+#tictactoe{
   display: none;
 }
 
