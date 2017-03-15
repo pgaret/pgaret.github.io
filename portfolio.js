@@ -68,7 +68,7 @@ function getMusicInfo(){
 		localStorage.removeItem('spotify_auth_state')
 		if (access_token){
 			$.ajax({
-					url: 'https://api.spotify.com/v1/me',
+					url: 'https://api.spotify.com/v1/me/albums',
 					headers: {
 						'Authorization': 'Bearer ' + access_token
 					},
