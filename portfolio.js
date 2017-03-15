@@ -65,7 +65,7 @@ function getMusicInfo(){
 	if (access_token && (state == null || state !== stored_state)){
 		alert("Authorization failed")
 	} else {
-		localStorage.removeItem(state_key)
+		localStorage.removeItem('spotify_auth_state')
 		if (access_token){
 			$.ajax({
 					url: 'https://api.spotify.com/v1/me',
