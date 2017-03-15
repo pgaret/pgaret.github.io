@@ -34,7 +34,7 @@ function handleSpotify(){
 	var state = generateRandomString(16)
 
 	localStorage.setItem(state_key, state)
-	var scope = 'user-read-private user-read-email'
+	var scope = 'user-read-email user-top-read user-library-read user-follow-read'
 
 	var url = 'https://accounts.spotify.com/authorize?response_type=token'
 	url += '&client_id='+encodeURIComponent(client_id)
@@ -68,7 +68,7 @@ function getMusicInfo(){
 		localStorage.removeItem('spotify_auth_state')
 		if (access_token){
 			$.ajax({
-					url: 'https://api.spotify.com/v1/me/albums',
+					url: 'https://api.spotify.com/v1/me/top/artists',
 					headers: {
 						'Authorization': 'Bearer ' + access_token
 					},
