@@ -43,7 +43,42 @@ function handleSpotify(){
 	url += '&state=' + encodeURIComponent(state);
 
 	window.location = url
+}
 
+function getHashParams() {
+	var hashParams = {};
+	var e, r = /([^&;=]+)=?([^&;]*)/g,
+			q = window.location.hash.substring(1);
+	while ( e = r.exec(q)) {
+		 hashParams[e[1]] = decodeURIComponent(e[2]);
+	}
+	return hashParams;
+}
+
+function getMusicInfo(){
+	var params = getHashParams()
+	var access_token = params.access_token
+	var state = params.state
+	var stored_state = localStorage.getItem(state_key)
+
+	if (access_token && (state == null || state !== stored_state)){
+		alert("Authorization failed")
+	} else {
+		localStorage.removeItem(state_key)
+		if (access_token){
+			$.ajax({
+					url: 'https://api.spotify.com/v1/me',
+					headers: {
+						'Authorization': 'Bearer ' + access_token
+					},
+					success: function(response) {
+						console.log(response)
+					}
+			});
+		} else {
+				console.log("Fail")
+		}
+	}
 }
 
 function fadeInChildren(str, callback){
