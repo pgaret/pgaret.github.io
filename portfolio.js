@@ -77,6 +77,8 @@ function getMusicInfo(){
 						for (let i = 0; i < response.items.length; i++){
 							let p = document.createElement('p')
 							let t = document.createTextNode(response.items[i].name)
+							console.log(body)
+							debugger
 							p.append(t)
 							body.append(p)
 						}
