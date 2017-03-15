@@ -73,7 +73,13 @@ function getMusicInfo(){
 						'Authorization': 'Bearer ' + access_token
 					},
 					success: function(response) {
-						console.log(response)
+						var body = document.getElementsByTagName[0]
+						for (let i = 0; i < response.items.length; i++){
+							let p = document.createElement('p')
+							let t = document.createTextNode(response.items[i].name)
+							p.append(t)
+							body.append(p)
+						}
 					}
 			});
 		} else {
