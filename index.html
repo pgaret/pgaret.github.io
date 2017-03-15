@@ -17,7 +17,7 @@
 				<p id="do" class="subtitle">What I do</p>
 				<li class="listitem" onClick="openPopup('fullstack')">Full Stack Web Development</li>
 				<li class="listitem" onClick="openPopup('games')">Game Development</li>
-				<li class="listitem" onClick="openPopup('music')">Musical Taste(Via Spotify)</li>
+				<li class="listitem" onClick="handleSpotify()">Music Taste(Via Spotify)</li>
 			</ul>
 			<article id="icons">
 				<p id="been" class="subtitle">Where I've been</p>
@@ -28,6 +28,10 @@
 			</article>
 		</nav>
 		<nav class="header popup">
+			<article id='music'>
+				<p class="subtitle articlesubtitle visible">Musical Tastes</p>
+				<button onClick="closePopup()" id="close">X</button>
+			</article>
 			<article id="fullstack">
 				<p class="subtitle articlesubtitle visible">Full Stack Web Development</p>
 				<button onClick="closePopup()" id="close">X</button>
@@ -36,6 +40,19 @@
 					<button onClick="slideShow('1')">></button>
 				</section>
 				<div class="slides">
+					<a id='mixtape' href='https://mixtapemaker.herokuapp.com/'>
+						<img class='slideimg' src='https://i.gyazo.com/c8bb64aa2747992b9a58e774ad1349b9.png'></img>
+						<section class="caption">
+							<span class="ctitle">MixtapeMaker</span><br>
+							Create playlists with Youtube videos<br>
+							Stack: MongoDB/Express/Angular
+						</section>
+						<div class="images">
+							<img class='articleicon' src='./images/webdev/mongo.png'></img>
+							<img class='articleicon' src='./images/webdev/express.png'></img>
+							<img class='articleicon' src='./images/webdev/angular.png'></img>
+						</div>
+					</a>
 					<a id='debtfree' href='https://debt-free.herokuapp.com/'>
 						<img class='slideimg' src='https://i.gyazo.com/271327a71752bb56c04235f4a454df8f.png'></img>
 						<section class="caption">
@@ -44,23 +61,11 @@
 							Stack: React-Redux/Rails/postgreSQL
 						</section>
 						<div class="images">
+							<img class='articleicon' src='./images/webdev/postgreSQL.png'></img>
 							<img class='articleicon' src='./images/webdev/rails.png'></img>
 							<img class='articleicon' src='./images/webdev/react.png'></img>
+							<img class='articleicon' src='./images/webdev/redux.png'></img>
 							<img class='articleicon' src='./images/webdev/d3.png'></img>
-							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
-							<img class='articleicon' src='./images/webdev/pgSQL.png'></img>
-						</div>
-					</a>
-					<a id='overstat' href='https://overstat.herokuapp.com/'>
-						<img class='slideimg' src='https://i.gyazo.com/6e96bdeea6d1737292456d8f102f58ab.png'></img>
-						<section class="caption">
-							<span class="ctitle">Overstat</span><br>
-							Stack: Javascript/jQuery<br>
-							Desc: View your Overwatch stats and compare with friends
-						</section>
-						<div class="images">
-							<img class='articleicon' src='./images/webdev/js.png'></img>
-							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
 						</div>
 					</a>
 					<a id='tower' href='https://pgaret.github.io/TowerofHanoi/'>
@@ -71,8 +76,8 @@
 							Desc: Watch a simulation of the Tower of Hanoi logic puzzle or solve it yourself.
 						</section>
 						<div class="images">
-							<img class='articleicon' src='./images/webdev/js.png'></img>
-							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
+							<img class='articleicon' src='./images/webdev/javascript.png'></img>
+							<img class='articleicon' src='./images/webdev/jquery.png'></img>
 						</div>
 					</a>
 					<a id='tictactoe' href='https://pgaret.github.io/TicTacToe/'>
@@ -83,8 +88,8 @@
 							Desc: TicTacToe game featuring unbeatable AI using Minimax.
 						</section>
 						<div class="images">
-							<img class='articleicon' src='./images/webdev/js.png'></img>
-							<img class='articleicon' src='./images/webdev/jquery.gif'></img>
+							<img class='articleicon' src='./images/webdev/javascript.png'></img>
+							<img class='articleicon' src='./images/webdev/jquery.png'></img>
 						</div>
 					</a>
 				</div>

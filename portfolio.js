@@ -17,6 +17,35 @@ $(document).ready(function(){
 	}, 100)
 })
 
+function generateRandomString(length) {
+	var text = '';
+	var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+	for (var i = 0; i < length; i++) {
+		text += possible.charAt(Math.floor(Math.random() * possible.length));
+	}
+	return text;
+}
+
+function handleSpotify(){
+	var state_key = 'spotify_auth_state'
+
+	var client_id = '989f3f3de3af4e5796d9b5e15bc87aeb'
+	var redirect_uri = 'file:///Users/flatironschool/Documents/Projects/pgaret.github.io/music.html'
+	var state = generateRandomString(16)
+
+	localStorage.setItem(state_key, state)
+	var scope = 'user-read-private user-read-email'
+
+	var url = 'https://accounts.spotify.com/authorize?response_type=token'
+	url += '&client_id='+encodeURIComponent(client_id)
+	url += '&scope=' + encodeURIComponent(scope);
+	url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
+	url += '&state=' + encodeURIComponent(state);
+
+	window.location = url
+
+}
+
 function fadeInChildren(str, callback){
 	let i = 0;
 	setTimeout(function show(){

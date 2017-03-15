@@ -158,15 +158,15 @@ body{
   font-size: 3vw;
 }
 
+#music{
+  display: none;
+}
+
 #fullstack{
   display: none;
 }
 
-#overstat{
-  display: none;
-}
-
-#overstat{
+#debtfree{
   display: none;
 }
 
