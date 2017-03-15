@@ -59,7 +59,7 @@ function getMusicInfo(){
 	var params = getHashParams()
 	var access_token = params.access_token
 	var state = params.state
-	var stored_state = localStorage.getItem(spotify_auth_state)
+	var stored_state = localStorage.getItem('spotify_auth_state')
 	console.log("state: "+state)
 
 	if (access_token && (state == null || state !== stored_state)){
